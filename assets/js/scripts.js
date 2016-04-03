@@ -93,6 +93,7 @@ jQuery(document).ready(function() {
             $('#message').removeClass("alert-info");
             $('#message').text("Internal error. Can't submit your response. Please try again later.");
           },
+          timeout: 3000,
           dataType: "json"
         });
 
