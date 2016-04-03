@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
         request.email = $(this).find('input[name="form-email"]').val();
     	
         $.ajax({
-          url: "http://localhost:3000/api/advice",
+          url: "http://advice-demo.bestboyelectric.io/api/advice",
           type: "POST",
           data: JSON.stringify(request),
           contentType: "application/json",
