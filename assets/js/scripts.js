@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
         request.email = $(this).find('input[name="form-email"]').val();
     	
         $.ajax({
-          url: "http://advice-demo.bestboyelectric.io/api/advice",
+          url: "http://localhost:3000/api/advice",
           type: "POST",
           data: JSON.stringify(request),
           contentType: "application/json",
@@ -85,7 +85,7 @@ jQuery(document).ready(function() {
             $('#message').css('display','block');
             $('#message').addClass("alert-info");
             $('#message').removeClass("alert-danger");
-            $('#message').text("Thank you for submitting your answers!");
+            $('#message').text("Thanks for that! We'll email you a report of how explosive you currently are");
           },
           error: function(data, status, error){
             $('#message').css('display','block');
