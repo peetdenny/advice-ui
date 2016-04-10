@@ -2,7 +2,7 @@
 Front end for the advice service
 
 # Running docker container
-Frontend is server by nginx web server which plays also the role of load balancer for advice service.<br />
+Frontend is served by nginx web server which plays also the role of load balancer for advice service.<br />
 The advice-ui container is linked with advice-service container for load balancing purpose. <br />
 The advice-ui container can be run with the following steps:
 - cd ../advice-ui
